@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#90009688"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/sub_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100sp"
+        android:text="Buy Data"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/bal_btn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sub_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160sp"
+        android:text="Check Data Balance"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
