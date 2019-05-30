@@ -18,34 +18,18 @@ public class dailyPlans extends AppCompatActivity {
         setContentView(R.layout.activity_daily_plans);
 
 
-
-    final Button mb20 = findViewById(R.id.mb20);
-    final Button mb50 = findViewById(R.id.mb50);
-    final Button mb150 = findViewById(R.id.mb150);
-
-
-    mb20.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            Intent sub = new Intent(Intent.ACTION_CALL);
-            sub.setData(Uri.parse("tel:" + Uri.encode("*559#")));
-
-            if (ActivityCompat.checkSelfPermission(dailyPlans.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
-                return;
-            }
-
-            startActivity(sub);
-        }
-    });
+        final Button mb20 = findViewById(R.id.mb20);
+        final Button mb50 = findViewById(R.id.mb50);
+        final Button mb150 = findViewById(R.id.mb150);
 
 
-        mb50.setOnClickListener(new View.OnClickListener() {
+        mb20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent sub = new Intent(Intent.ACTION_CALL);
-                sub.setData(Uri.parse("tel:" + Uri.encode("*559#")));
+                sub.setData(Uri.parse("tel:" + Uri.encode("*131*1*1*1#")));
 
-                if (ActivityCompat.checkSelfPermission(dailyPlans.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
+                if (ActivityCompat.checkSelfPermission(dailyPlans.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                     return;
                 }
 
@@ -54,15 +38,28 @@ public class dailyPlans extends AppCompatActivity {
         });
 
 
+        mb50.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent sub = new Intent(Intent.ACTION_CALL);
+                sub.setData(Uri.parse("tel:" + Uri.encode("*131*1*1*2#")));
+
+                if (ActivityCompat.checkSelfPermission(dailyPlans.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+
+                startActivity(sub);
+            }
+        });
 
 
         mb150.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent sub = new Intent(Intent.ACTION_CALL);
-                sub.setData(Uri.parse("tel:" + Uri.encode("*559#")));
+                sub.setData(Uri.parse("tel:" + Uri.encode("*131*1*1*3#")));
 
-                if (ActivityCompat.checkSelfPermission(dailyPlans.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
+                if (ActivityCompat.checkSelfPermission(dailyPlans.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                     return;
                 }
 
