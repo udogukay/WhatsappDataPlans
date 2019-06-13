@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent bal = new Intent(Intent.ACTION_CALL);
-                bal.setData(Uri.parse("tel:"+ Uri.encode("*559#")));
+                bal.setData(Uri.parse("tel:"+ Uri.encode("*131*4#")));
                 if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
                     Toast.makeText(MainActivity.this, "You need to allow the app to make calls", Toast. LENGTH_LONG).show();
                     return;

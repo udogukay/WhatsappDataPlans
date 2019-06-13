@@ -32,7 +32,7 @@ public class MonthlyPlans extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent sub = new Intent(Intent.ACTION_CALL);
-                sub.setData(Uri.parse("tel:"+ Uri.encode("*556#")));
+                sub.setData(Uri.parse("tel:"+ Uri.encode("*131*1*3*1#")));
                 if (ActivityCompat.checkSelfPermission(MonthlyPlans.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
                     return;
                 }
@@ -46,7 +46,7 @@ public class MonthlyPlans extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent sub = new Intent(Intent.ACTION_CALL);
-                sub.setData(Uri.parse("tel:"+ Uri.encode("*556#")));
+                sub.setData(Uri.parse("tel:"+ Uri.encode("*131*1*3*2#")));
                 if (ActivityCompat.checkSelfPermission(MonthlyPlans.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
                     return;
                 }
@@ -61,7 +61,7 @@ public class MonthlyPlans extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent sub = new Intent(Intent.ACTION_CALL);
-                sub.setData(Uri.parse("tel:"+ Uri.encode("*556#")));
+                sub.setData(Uri.parse("tel:"+ Uri.encode("*131*1*3*3#")));
                 if (ActivityCompat.checkSelfPermission(MonthlyPlans.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
                     return;
                 }
@@ -75,7 +75,7 @@ public class MonthlyPlans extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent sub = new Intent(Intent.ACTION_CALL);
-                sub.setData(Uri.parse("tel:"+ Uri.encode("*556#")));
+                sub.setData(Uri.parse("tel:"+ Uri.encode("*131*1*3*4#")));
                 if (ActivityCompat.checkSelfPermission(MonthlyPlans.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
                     return;
                 }
@@ -89,7 +89,7 @@ public class MonthlyPlans extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent sub = new Intent(Intent.ACTION_CALL);
-                sub.setData(Uri.parse("tel:"+ Uri.encode("*556#")));
+                sub.setData(Uri.parse("tel:"+ Uri.encode("131*1*3*5#")));
                 if (ActivityCompat.checkSelfPermission(MonthlyPlans.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
                     return;
                 }
@@ -103,7 +103,7 @@ public class MonthlyPlans extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent sub = new Intent(Intent.ACTION_CALL);
-                sub.setData(Uri.parse("tel:"+ Uri.encode("*556#")));
+                sub.setData(Uri.parse("tel:"+ Uri.encode("*131*1*3*99*7#")));
                 if (ActivityCompat.checkSelfPermission(MonthlyPlans.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
                     return;
                 }

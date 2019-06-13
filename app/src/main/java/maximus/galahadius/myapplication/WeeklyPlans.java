@@ -26,7 +26,7 @@ public class WeeklyPlans extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent sub = new Intent(Intent.ACTION_CALL);
-                sub.setData(Uri.parse("tel:"+ Uri.encode("*556#")));
+                sub.setData(Uri.parse("tel:"+ Uri.encode("*131*1*2*1#")));
                 if (ActivityCompat.checkSelfPermission(WeeklyPlans.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
                     return;
                 }
@@ -40,7 +40,7 @@ public class WeeklyPlans extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent sub = new Intent(Intent.ACTION_CALL);
-                sub.setData(Uri.parse("tel:"+ Uri.encode("*556#")));
+                sub.setData(Uri.parse("tel:"+ Uri.encode("*131*1*2*2#")));
                 if (ActivityCompat.checkSelfPermission(WeeklyPlans.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
                     return;
                 }
@@ -54,7 +54,7 @@ public class WeeklyPlans extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent sub = new Intent(Intent.ACTION_CALL);
-                sub.setData(Uri.parse("tel:"+ Uri.encode("*556#")));
+                sub.setData(Uri.parse("tel:"+ Uri.encode("*131*1*2*3#")));
                 if (ActivityCompat.checkSelfPermission(WeeklyPlans.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
                     return;
                 }
