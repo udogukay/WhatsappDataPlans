@@ -18,18 +18,18 @@
         android:textAllCaps="false"
         android:textColor="#FF000000"
         android:textSize="23dp"
-        app:layout_constraintBottom_toTopOf="@+id/mw150"
+        app:layout_constraintBottom_toTopOf="@+id/mw300"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/mw150"
+        android:id="@+id/mw300"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp"
-        android:text="150MB (N300)"
+        android:text="350MB (N300)"
         android:textAllCaps="false"
         app:layout_constraintBottom_toTopOf="@+id/mb500"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,25 +41,46 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="500+250MB (N500)"
+        android:text="1.5GB (N500)"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toTopOf="@+id/mb500Plus"
+        app:layout_constraintBottom_toTopOf="@+id/mb500x2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mw150" />
+        app:layout_constraintTop_toBottomOf="@+id/mw300" />
 
     <Button
-        android:id="@+id/mb500Plus"
+        android:id="@+id/mb500x2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="13dp"
-        android:text="500MB +N500 Talktime (N500)"
+        android:layout_marginTop="32dp"
+        android:text="750MB - 2 week plan (N500)"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mb500" />
+
+    <Button
+        android:id="@+id/mb5001k"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500MB + N1000 Talktime (N500)"
+        app:layout_constraintBottom_toTopOf="@+id/waw"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mb500x2" />
+
+    <Button
+        android:id="@+id/waw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whatsapp Weekly (N50)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mb5001k" />
 </android.support.constraint.ConstraintLayout>

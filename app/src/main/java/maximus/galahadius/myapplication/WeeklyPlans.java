@@ -18,11 +18,13 @@ public class WeeklyPlans extends AppCompatActivity {
         setContentView(R.layout.activity_weekly_plans);
 
 
-        final Button mb150 = findViewById(R.id.mw150);
+        final Button mb300 = findViewById(R.id.mw300);
         final Button mb500 = findViewById(R.id.mb500);
-        final Button mb500plus = findViewById(R.id.mb500Plus);
+        final Button mb500x2 = findViewById(R.id.mb500x2);
+        final Button mb5001k = findViewById(R.id.mb5001k);
+        final Button waw = findViewById(R.id.waw);
 
-        mb150.setOnClickListener(new View.OnClickListener() {
+        mb300.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent sub = new Intent(Intent.ACTION_CALL);
@@ -50,7 +52,7 @@ public class WeeklyPlans extends AppCompatActivity {
 
 
 
-        mb500plus.setOnClickListener(new View.OnClickListener() {
+        mb500x2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent sub = new Intent(Intent.ACTION_CALL);
@@ -63,6 +65,29 @@ public class WeeklyPlans extends AppCompatActivity {
         });
 
 
+        mb5001k.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent sub = new Intent(Intent.ACTION_CALL);
+                sub.setData(Uri.parse("tel:" + Uri.encode("*131*1*2*4#")));
+                if (ActivityCompat.checkSelfPermission(WeeklyPlans.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+                startActivity(sub);
+            }
+        });
+
+        waw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent sub = new Intent(Intent.ACTION_CALL);
+                sub.setData(Uri.parse("tel:" + Uri.encode("*131*1*2*4#")));
+                if (ActivityCompat.checkSelfPermission(WeeklyPlans.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+                startActivity(sub);
+            }
+        });
 
 
 

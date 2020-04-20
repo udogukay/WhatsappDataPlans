@@ -17,108 +17,101 @@
         android:text="Monthly Plans"
         android:textColor="#FF000000"
         android:textSize="23dp"
-        app:layout_constraintBottom_toTopOf="@+id/gig1"
+        app:layout_constraintBottom_toTopOf="@+id/gig2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/gig1"
+        android:id="@+id/gig1_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1GB+500MB (N1,000)"
+        android:text="@string/oneGigMonthly"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toStartOf="@+id/gig1_5"
+        app:layout_constraintEnd_toStartOf="@+id/gig2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/gig1_5" />
+        app:layout_constraintTop_toTopOf="@+id/gig2" />
 
     <Button
-        android:id="@+id/gig2_5"
+        android:id="@+id/gig3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2.5GB+1GB (N2,000)"
+        android:text="@string/threeGigPlan"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toStartOf="@+id/gig5"
+        app:layout_constraintEnd_toStartOf="@+id/gig4"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/gig5" />
+        app:layout_constraintTop_toTopOf="@+id/gig4" />
+
+    <Button
+        android:id="@+id/gig6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sixGigPlan"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="@id/gig10"
+        app:layout_constraintEnd_toEndOf="@+id/gig3"
+        app:layout_constraintStart_toStartOf="@+id/gig3"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <Button
+        android:id="@+id/gig15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:text="@string/fifteenGigPlan"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gig0"/>
+
+    <Button
+        android:id="@+id/gig2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/twoGigMonthly"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/gig1_5"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/gig4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/fourGigPlan"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/gig3"
+        app:layout_constraintTop_toBottomOf="@+id/gig2" />
 
     <Button
         android:id="@+id/gig10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="10GB (N5,000)"
+        android:layout_marginTop="64dp"
+        android:text="@string/tenGigPlan"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toStartOf="@+id/gig22"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/gig22" />
+        app:layout_constraintEnd_toEndOf="@+id/gig4"
+        app:layout_constraintStart_toStartOf="@+id/gig4"
+        app:layout_constraintTop_toBottomOf="@+id/gig4" />
 
     <Button
-        android:id="@+id/gig1plus"
+        android:id="@+id/gig0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1GB+1k (N1,000)"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toStartOf="@+id/gig2_5plus"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/gig2_5plus" />
-
-    <Button
-        android:id="@+id/gig1_5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="62dp"
-        android:text="1.5GB (N1,200)"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/gig1"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <Button
-        android:id="@+id/gig5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="24dp"
-        android:text="5GB (N3,500)"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toTopOf="@+id/gig22"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/gig2_5"
-        app:layout_constraintTop_toBottomOf="@+id/gig1_5" />
-
-    <Button
-        android:id="@+id/gig22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="24dp"
-        android:text="22GB (N10,000)"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toTopOf="@+id/gig2_5plus"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/gig10"
-        app:layout_constraintTop_toBottomOf="@+id/gig5" />
-
-    <Button
-        android:id="@+id/gig2_5plus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="32dp"
         android:text="2.5GB+2k5 (N2,000)"
         android:textAllCaps="false"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/gig1plus"
-        app:layout_constraintTop_toBottomOf="@+id/gig22" />
+        app:layout_constraintStart_toEndOf="@+id/gig15"
+        app:layout_constraintTop_toBottomOf="@+id/gig10" />
 
 
 </android.support.constraint.ConstraintLayout>

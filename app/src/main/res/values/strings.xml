@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MTN Data Plans</string>
+    <string name="oneGigMonthly">1.5GB (N1000)</string>
+    <string name="twoGigMonthly">2GB (N1200)</string>
+    <string name="threeGigPlan">3GB (N1500)</string>
+    <string name="fourGigPlan">4.5GB (N2000)</string>
+    <string name="sixGigPlan">6GB (N2500)</string>
+    <string name="tenGigPlan">10GB (N3500)</string>
+    <string name="fifteenGigPlan">15GB (N5000)</string>
 </resources>
